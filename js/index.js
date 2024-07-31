@@ -4,7 +4,6 @@ class Webpage
 
     constructor()
     {
-        this.Contact = new Contact();
         this.hamburger = document.getElementById("hamburger");
         this.hamburger.addEventListener("click",(e)=>this.OnHamburgerClicked(e))
         this.navLinks = document.querySelectorAll('nav a:not(#hamburger)');
