@@ -1,0 +1,65 @@
+header
+{
+    position: relative;
+    position: sticky;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: white;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-weight: 900;
+    flex-wrap: wrap;
+}
+
+#hamburger
+{
+    cursor: pointer;
+    display: none;
+}
+
+nav a 
+{
+    color: inherit;
+    padding: .5rem 1rem;
+    line-height: 2rem;
+}
+
+nav a img 
+{
+    display: block;
+    width: 2rem;
+}
+
+nav a:hover
+{
+    background-color: var(--secondaryBlue);
+}
+
+@media (max-width: 482.5px) 
+{
+    #hamburger 
+    {
+        display: block;
+        width: fit-content;
+        background-color: var(--primaryBlue);
+    }
+
+    nav a
+    {
+        display: none;
+        text-align: start;
+    }
+
+    nav
+    {
+        display: block;
+    }
+}

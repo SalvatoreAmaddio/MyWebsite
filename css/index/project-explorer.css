@@ -1,0 +1,93 @@
+.projectType
+{
+    display: block;
+    padding: 2rem;
+    width: fit-content;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bckgrndColor);
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.projectType:hover
+{
+    transform: scale(1.1); 
+}
+
+.projectType img, .projectType a, .projectType span
+{
+    display: block;
+}
+
+.projectType a
+{
+    color: blue;
+    margin-top: .5rem;
+}
+
+.projectType a, .projectType span 
+{
+    text-align: start;
+}
+
+.projectType span
+{
+    margin-top: 1rem;
+}
+
+.projectType span:last-child 
+{
+    padding: .2rem;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.projectType span:nth-of-type(2)
+{
+    color: blue;
+}
+
+.projectType:first-child span:first-of-type
+{
+    color: var(--desktopColor);
+}
+
+.projectType:first-child span:last-of-type
+{
+    background-color: var(--desktopColor);
+}
+
+.projectType:nth-child(2) span:last-child
+{
+    background-color: var(--mobileColor);
+}
+
+.projectType:nth-child(2) span:first-of-type
+{
+    color: var(--mobileColor);
+}
+
+.projectType:last-child span:first-of-type
+{
+    color: var(--webColor);
+}
+
+.projectType:last-child span:last-child 
+{
+    background-color: var(--webColor);
+}
+
+@media (max-width: 507.5px) 
+{
+    .projectType 
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+#hero-image 
+{
+    text-align: center;
+    padding: 2rem;
+}
+
+#hero-image h1 
+{
+    font-weight: 900;
+    font-family: "Righteous", sans-serif;
+}
+
+.layer-content
+{
+    text-align: start;
+    display: block;
+}
+
+.project
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.project-logo
+{
+    width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: .5rem;
+    background-color: white;
+}
+
+.project-logo img 
+{
+    width: 9rem;
+    height: 9rem;
+    background-color: white;
+}
+
+.project-content
+{
+    line-height: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.project-content h1 
+{
+    margin-bottom: 1rem;
+    line-height: 2.3rem;
+}
+
+.buttons 
+{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons a 
+{
+    display: block;
+}
+
+.buttons img 
+{
+    width: 50px;
+}
+
+@media (max-width: 482.5px) 
+{
+    .project
+    {
+        flex-wrap: wrap;
+    }
+
+    .project-logo
+    {
+        margin: 0 auto;
+    }
+}

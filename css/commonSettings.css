@@ -1,0 +1,71 @@
+:root 
+{
+    --bckgrndColor: #EDF1FF;
+    --primaryBlue: #0066b2;
+    --secondaryBlue: #34568B;
+    --webColor: #0072B5;
+}
+
+* 
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+body
+{
+    background-color: var(--bckgrndColor);
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+header, footer
+{
+    background-color: var(--primaryBlue);
+    text-align: center;
+}
+
+footer 
+{
+    color: white;
+    padding: .5rem;
+    line-height: 1rem;
+    font-size: .8rem;
+}
+
+.layer
+{
+    margin-bottom: 1rem;
+    background-color: var(--secondaryBlue);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.layer a
+{
+    color: inherit;
+}
+
+.layer h2 
+{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.layer-content 
+{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

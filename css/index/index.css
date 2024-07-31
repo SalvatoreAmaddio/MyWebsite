@@ -1,0 +1,126 @@
+.layer-content img 
+{
+    width: 150px;
+    height: 150px;
+}
+
+#hero-image 
+{
+    text-align: center;
+    padding: 2rem;
+    font-family: "Righteous", sans-serif;
+    font-weight: 900;
+}
+
+#hero-image img 
+{
+    display: block;
+    height: 15rem;
+    width: 15rem;
+    max-width: 15rem;
+    margin: 0 auto;
+    animation-name: flip-logo;
+    animation-duration: .4s;  
+    animation-iteration-count: 3;
+}
+
+@keyframes flip-logo 
+{
+  0%   {transform: rotateY(150deg);}
+}
+
+
+#hero-image h1 
+{
+    font-weight: inherit;
+}
+
+#job-title
+{
+    margin-top: 1rem;
+    font-weight: inherit;
+}
+
+#job-title h2
+{
+    font-weight: inherit;
+}
+
+.desktopColor 
+{
+    color: var(--desktopColor);
+}
+
+.webColor 
+{
+    color: var(--webColor);
+}
+
+.mobileColor 
+{
+    color: var(--mobileColor);
+}
+
+#aboutMe 
+{
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+#about-me-summary
+{
+    width: 70%;
+    line-height: 1.5rem;
+    text-align: start;
+    text-wrap:wrap;
+}
+
+#me-wrapper 
+{
+    border: 1px solid white;
+    min-width: 15rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    align-self: start;
+}
+
+#me-wrapper img 
+{
+    width: 15rem;
+    height: 15rem;
+}
+
+#cv_download 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-weight: bold;
+}
+
+#cv_download img
+{
+    width: 2rem;
+}
+
+@media (max-width: 500.5px) 
+{
+    #aboutMe 
+    {
+        flex-wrap: wrap;
+    }
+
+    #me-wrapper 
+    {
+        margin: 0 auto;
+    }
+
+    #about-me-summary 
+    {
+        width: 100%;
+    }
+}

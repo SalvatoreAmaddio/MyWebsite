@@ -1,0 +1,142 @@
+#contact 
+{
+    height: 100%;
+}
+
+.hidden
+{
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    width: fit-content;
+    z-index: 2;
+}
+
+.show
+{
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.5);
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    bottom: 100%;
+}
+
+#contact img
+{
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    top: 90%;
+    cursor: pointer;
+}
+
+.contact-img-hidden
+{
+    display: none;
+}
+
+#contact-form-container 
+{
+}
+
+.contact-form-container-hide 
+{
+    display: none;
+}
+
+.contact-form-container-show
+{
+    display: block;
+    position: sticky;
+    top: 0;
+}
+
+#closeButton
+{
+    position: absolute;
+    right: 0;
+    top: -15px;
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+    color: red;
+}
+
+#contact-form-container form 
+{
+    padding-inline: 7%;
+    position: relative;
+    top: 6rem;
+}
+
+#formContent 
+{
+    background-color: var(--secondaryBlue);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 100%;
+    min-width: 50%;
+    color: white;
+    position: relative;
+}
+
+#formContent button 
+{
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#messageContainer 
+{
+    display: flex;
+    gap: 1rem;
+}
+
+#messageContainer span 
+{
+    font-style: italic;
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+#messageContainer span span 
+{
+    color: red;
+    font-weight: bold;
+}
+
+#formContent input, #formContent textarea, #formContent button
+{
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+    margin-top: .3rem;
+}
+
+#formContent textarea
+{
+    width: 100%;
+}
+
+#formContent .mandatory::before
+{
+    content: "* ";
+    color: red;
+    font-weight: 900;
+}
+
+#senderDetails 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    width: 50%;
+}
+
+#message 
+{
+    width: 50%;
+}

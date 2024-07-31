@@ -1,0 +1,16 @@
+#databases-content div img
+{
+    background-color: white;
+}
+
+#databases-content div:last-child
+{
+    background-color: #A13437;
+}
+
+#databases-content div
+{
+    background-color: white;
+    border-radius: 10%;
+    overflow: hidden;
+}
